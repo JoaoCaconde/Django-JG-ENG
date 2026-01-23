@@ -1,7 +1,133 @@
-h1 a, h2 a {
-    color: #C25100;
+h2, h3{
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Lobster';
+    padding: 10px;
+}
+
+.title {
+    font-family: 'Lobster';
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #363636;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    padding: 40px; 
+
+}
+h5{
+    color: #ffffff;
+    font-family: 'Lobster';
+    font-size: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1.titleProjetos{
+    color: #ffffff;
+    font-size: 48px;
+    text-align: left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Lobster';
+    border-left-style: solid;
+    margin-bottom: 1px;
+    border-width: 25px;
+    padding: 15px;
+}
+
+header {
+  background-color: #333030;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  background-color: #333030;
+  padding: 15px;
+  text-align: center;
+  color: rgb(88, 88, 88);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main{
+  background-color: #1f1d1d;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#div2 {
+  border-radius: 25px;
+  padding: 25px;
+  gap: 25px;
+}
+
+.imgprofile {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  height: 350px;
+}
+
+.forEachProject {
+    justify-content: space-between;
+    gap: 50px;
+    outline: none;
+    width: 640px;
+    height: 480px;
+    border-style: double;
+    border-color: rgba(104, 90, 231, 0.363);
+}
+
+.lineSeparableProject {
+    border-style: dotted;
+    border-color: rgba(255, 255, 255, 0.637);
+    border-width: 2px;
+}
+.imgPageDetail {
+    border-radius: 15px;
+    height: 480px;
+    display: block;
+    margin-bottom: 30px;
+    border: 4px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 720px;
+    color: white;
+    box-shadow: 5px 5px 8px #ffffff;
+}
+.descriptionProject {
+    font-family: 'Lobster';
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #323332;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
 }
 
 body {
-    padding-left: 15px;
+    background-color: #1f1d1d;  
+}
+
+.forEachProject:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listaCompetencias li {
+    list-style-type: none;
+    border-bottom-style: double;
+    border-color: rgba(255, 255, 255, 0.637);
+    border-width: 2px;
+}
+
+
+
+li{
+    font-family: 'Lobster';
+    font-size: 24px;
+    color: #f4ff5e;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
