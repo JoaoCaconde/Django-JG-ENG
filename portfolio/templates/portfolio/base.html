@@ -11,7 +11,21 @@
       <div class="wrapper">
         {% block sidebar %}
           <h1 class="title">João Guilherme Felizardo de Souza - Engenheiro de Software</h1><br>
-          <img class="imgprofile"src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}" alt="My image">
+          <div class="grid">
+          <img class="imgProfile" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}" alt="My image">
+          <div class="carousel">
+            <div class="group">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+            </div>
+            <div aria-hidden class="group">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+             <img class="rolloutImg" src="{% static 'WhatsApp_Image_2025-11-10_at_06.39.33.jpeg' %}">
+            </div>
+          </div>
+          </div>
           <ul class="listaCompetencias">
            <br><li>Python</li><br>
            <li>Java</li><br>

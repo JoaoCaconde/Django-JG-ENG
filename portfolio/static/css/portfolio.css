@@ -63,20 +63,70 @@ main{
   gap: 25px;
 }
 
-.imgprofile {
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 350px;
-  height: 350px;
+.grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
-.forEachProject {
+.carousel {
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+  overflow-x: auto;
+  grid-row-start: 1;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.imgProfile {
+  border-radius: 40%;
+  clip-path: circle(50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  height: 300px;
+  grid-row-start: 1;
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.rolloutImg {
+  flex: 0 0 5em;  
+  height: 6em;
+  width: 7em;
+  padding: 0.1em;
+  border-radius: 30%;
+  text-align: center;
+  align-content: center;
+  font-size: 2rem;
+  opacity: 0.3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.562);
+}
+
+.group{
+  padding-right: 18em;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+  animation: spin 10s infinite linear;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.forEachProject{
     justify-content: space-between;
     gap: 50px;
     outline: none;
-    width: 640px;
-    height: 480px;
     border-style: double;
+    align-items: center;
     border-color: rgba(104, 90, 231, 0.363);
 }
 
@@ -88,15 +138,23 @@ main{
 .imgPageDetail {
     border-radius: 15px;
     height: 480px;
-    display: block;
     margin-bottom: 30px;
     border: 4px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 720px;
-    color: white;
-    box-shadow: 5px 5px 8px #ffffff;
+    grid-column-start: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.562);
 }
+
+.projectDetailPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
 .descriptionProject {
     font-family: 'Lobster';
     font-size: 18px;
@@ -104,7 +162,7 @@ main{
     border-radius: 5px;
     background-color: #323332;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
-    padding: 20px; 
+    padding: 20px;
 }
 
 body {

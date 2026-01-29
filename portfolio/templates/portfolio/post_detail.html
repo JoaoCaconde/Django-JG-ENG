@@ -2,18 +2,16 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
 <body>
+<div class="projectDetailPrincipal">    
 <h3>{{ project.title }}</h3><br>
 {% if project.image %}
             <img src="{{ project.image.url }}" class="imgPageDetail">
         {% endif %}
-<div class="row">
-    <div class="col-md-4">
         <h5>Descrição:</h5>
         <p class="descriptionProject">{{ project.description }}</p>
         <br>
         <h5>Construído com:</h5>
         <p class="descriptionProject">{{ project.technology }}</p>
-    </div>
 <a href="/" class="top-menu" width="1200px" height="1200px" padding="10px">
     {% include './icons/arrow-left.svg' %}
 </a>  
