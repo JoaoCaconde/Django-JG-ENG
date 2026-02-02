@@ -1,6 +1,7 @@
 {% extends "portfolio/base.html" %}
 {% block content %}
             <br><br><br><br>
+            <h1 class="titleProjetos">PROJETOS:</h1><br>  
             <div class="card-body" >
             {% for project in projects %}
             <div class="forEachProject" id="div2" alt="projects"  onclick="location.href='{% url 'post_detail' pk=project.pk %}'" style="cursor: pointer;" width="50%"> 
@@ -14,4 +15,4 @@
             <br><br><br>
             {% endif %}
             {% endfor %}
-          {% endblock %}
+{% endblock %}

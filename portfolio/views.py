@@ -24,6 +24,12 @@ def post_list(request):
     }
     return render(request, 'portfolio/post_list.html', context)
 
+def sobreMim(request):
+    return render(request, 'portfolio/sobreMim.html')
+
+def contato(request):
+    return render(request, 'portfolio/contato.html')    
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     photos = PostImage.objects.filter(post=post)
