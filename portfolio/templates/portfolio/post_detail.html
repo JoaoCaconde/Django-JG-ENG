@@ -40,15 +40,15 @@
       <span class="sr-only"></span>
     </a>
     <!--/.Controls-->
-  </div>
-</div>
+       </div>
+       </div>
         {% endif %}
         <br>
         <h5>Descrição:</h5>
-        <p class="descriptionProject">{{ project.description }}</p>
+        <p class="descriptionProject">{{ project.description|linebreaksbr }}</p>
         <br>
-        <h5>Construído com:</h5>
-        <p class="descriptionProject">{{ project.technology }}</p>
+        <h5>Habilidades adquiridas:</h5>
+        <p class="descriptionProject">{{ project.habilidades|linebreaksbr}}</p>
 <a href="/" class="top-menu" width="1200px" height="1200px" padding="10px">
     {% include './icons/arrow-left.svg' %}
 </a>  
