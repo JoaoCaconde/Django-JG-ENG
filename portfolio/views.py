@@ -28,7 +28,10 @@ def sobreMim(request):
     return render(request, 'portfolio/sobreMim.html')
 
 def contato(request):
-    return render(request, 'portfolio/contato.html')    
+    return render(request, 'portfolio/contato.html') 
+
+def habilidades(request):  
+    return render(request, 'portfolio/habilidades.html')   
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)

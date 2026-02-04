@@ -1,0 +1,212 @@
+h2, h3{
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Lobster';
+    padding: 10px;
+}
+
+.title {
+    font-family: 'Lobster';
+    font-size: 40px;
+    color: #f5f5f5;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 1px; 
+    text-shadow: 1px 1px 2px #000000;
+    text-decoration: overline;
+}
+h5{
+    color: #ffffff;
+    font-family: 'Lobster';
+    font-size: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1.titleProjetos{
+    color: #ffffff;
+    font-size: 48px;
+    text-align: left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Lobster';
+    border-left-style: solid;
+    margin-bottom: 1px;
+    border-width: 25px;
+    padding: 15px;
+}
+
+header {
+  background-color: #333030;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  background-color: #333030;
+  padding: 15px;
+  text-align: center;
+  color: rgb(88, 88, 88);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main{
+  background-color: #1f1d1d;  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#div2 {
+  border-radius: 25px;
+  padding: 25px;
+  gap: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.rolloutCarousel {
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+  overflow-x: auto;
+  grid-row-start: 1;
+  opacity: 0.8;
+  background-color: #ffffff05;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.imgProfile {
+  box-shadow: 0 0 10px #807f7f;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+
+.rolloutCarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.rolloutImg {
+  flex: 0 0 5em;  
+  height: 7em;
+  width: 8em;
+  padding: 2em;
+  text-align: center;
+  align-content: center;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.sobreMimP {
+    font-family: 'Lobster';
+    font-size: 20px;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.group{
+  padding-right: 26em;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26em;
+  animation: spin 15s infinite linear;
+}
+
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.forEachProject{
+    justify-content: space-between;
+    gap: 50px;
+    outline: none;
+    border-style: double;
+    align-items: center;
+    border-color: rgba(104, 90, 231, 0.363);
+}
+
+.lineSeparableProject {
+    border-style: dotted;
+    border-color: rgba(255, 255, 255, 0.637);
+    border-width: 2px;
+}
+
+.projectDetailPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.descriptionProject {
+    font-family: 'Lobster';
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #323332;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+
+body {
+    background-color: #1f1d1d;
+    padding: 50px;  
+}
+
+.forEachProject:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listaCompetencias li {
+    list-style-type: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color:#333030;
+}
+
+ul li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  border: #000000;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #11111170;
+}
+
+li{
+    font-family: 'Lobster';
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
